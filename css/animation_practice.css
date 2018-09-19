@@ -1,0 +1,85 @@
+/* this is where all of your CSS styles go */
+body,html{
+	width:100%;
+	height:100%;
+}
+.grid_container{
+	width:300px;
+	height:100px;
+	position:relative;
+	left:50%;
+	top:50%;
+	margin-top: -150px;
+	margin-left:-100px;
+}
+
+.font{
+	font-family: 'Source Sans Pro';
+	font-size: 50px;
+	margin-left:5px;
+	float:left;
+}
+
+.forp{
+	font-family: 'Source Sans Pro';
+	font-size: 50px;
+	position:absolute;
+	top:150px;
+	left:65px;
+	opacity:0;
+	animation: p_up 1s;
+	animation-fill-mode:forwards;
+
+}
+
+@keyframes t_up{
+	0% 		{top:0px; opacity:1;}
+	100%	{top:-150px; opacity:0;}
+}
+.t{
+	opacity:0;
+	position:relative;
+	animation: t_up 1s ease-in-out;
+	animation-fill-mode:forwards;
+}
+
+@keyframes p_up{
+	0%		{top:150px; opacity:0;}
+	100%	{top:0px; opacity:1;}
+}
+
+@keyframes o_left{
+	0% 	{left:0px;}
+	100%{left:-20px;}
+}
+
+.o{
+	position:relative;
+	animation: o_left 1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes r_right{
+	0%		{left:0px;}
+	100%	{left:30px;}
+}
+
+.r{
+	position:relative;
+	animation:r_right 1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes t_down{
+	0%		{top:-150px; opacity:0;}
+	100%	{top:0px; opacity:1;}
+}
+
+.lastt{
+	font-family: 'Source Sans Pro';
+	font-size: 50px;
+	position:relative;
+	animation: t_down 1s;
+	animation-fill-mode: forwards;
+}
+
